@@ -1,24 +1,23 @@
 class Solution {
 public:
     bool isPalindrome(string s) {
-        string str;
+ int left = 0, right = s.size() - 1;
 
-        // Filter and convert to lowercase
-        for (char ch : s) {
-            if (ch >= 'A' && ch <= 'Z') {
-                str.push_back(tolower(ch));
-            }
-            else if ((ch >= 'a' && ch <= 'z') || (ch >= '0' && ch <= '9')) {
-                str.push_back(ch);
-            }
+        while (left < right) {
+            // Skip non-alphanumeric on left
+            while (left < right && !isalnum(s[left])) left++;
+
+            // Skip non-alphanumeric on right
+            while (left < right && !isalnum(s[right])) right--;
+
+            // Compare lowercase versions
+            if (tolower(s[left]) != tolower(s[right]))
+                return false;
+
+            left++;
+            right--;
         }
 
-        int i = 0, j = str.size() - 1;
-        while (i <= j) {
-            if (str[i] != str[j]) return false;
-            i++;
-            j--;
-        }
         return true;
     }
-};
+}
