@@ -29,6 +29,5 @@ public:
             ans.push_back(level);
         }
     return ans;
-        
     }
 };
