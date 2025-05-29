@@ -1,5 +1,6 @@
 class Solution {
 public:
+//sORTING + 2POINTER APPROACH
     int threeSumClosest(vector<int>& nums, int target) {
         sort(nums.begin(),nums.end());
         int closestSum = nums[0] + nums[1] + nums[2];
