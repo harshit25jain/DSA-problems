@@ -20,8 +20,9 @@ public:
 
     return result;
     }
-};
-//brute force approach
+}; //the idea is to maintain maxProd: Max product ending at current index and minProd: Min product ending at current index
+
+/*/brute force approach
 int maxProduct(vector<int>& nums) {
     int n = nums.size(), result = INT_MIN;
     for (int i = 0; i < n; ++i) {
@@ -34,4 +35,4 @@ int maxProduct(vector<int>& nums) {
         }
     }
     return result;
-}
+}*/
