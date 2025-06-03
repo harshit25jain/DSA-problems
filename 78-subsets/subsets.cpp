@@ -1,6 +1,6 @@
 class Solution {
 public:
-//TC: O(n * 2^n)
+//TC: O(n * 2^n) approach is to apply recursion and backtracking
     void getAllSubsets(vector<int>&nums, vector<int> &ans, int i, vector<vector<int>> &allSubsets){
         if(i==nums.size()){
             allSubsets.push_back(ans);
@@ -10,7 +10,7 @@ public:
         //include
         ans.push_back(nums[i]);
         getAllSubsets(nums,ans,i+1,allSubsets);
-        ans.pop_back();
+        ans.pop_back(); //backtrack
 
         //exclude
         getAllSubsets(nums,ans,i+1,allSubsets);
@@ -18,7 +18,7 @@ public:
     }
     vector<vector<int>> subsets(vector<int>& nums) {
         vector<vector<int>> allSubsets;
-        vector<int>ans;
+        vector<int>ans; //store subsets
 
         getAllSubsets(nums,ans,0,allSubsets);
 
