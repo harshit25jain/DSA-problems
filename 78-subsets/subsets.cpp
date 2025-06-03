@@ -2,7 +2,7 @@ class Solution {
 public:
 //TC: O(n * 2^n) approach is to apply recursion and backtracking
     void getAllSubsets(vector<int>&nums, vector<int> &ans, int i, vector<vector<int>> &allSubsets){
-        if(i==nums.size()){
+        if(i==nums.size()){ //base condition
             allSubsets.push_back(ans);
             return;
         }
