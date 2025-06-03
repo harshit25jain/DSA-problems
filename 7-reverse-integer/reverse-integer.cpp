@@ -2,7 +2,6 @@ class Solution {
 public:
     int reverse(int x) {
         int reversedNum = 0; 
-
     while (x != 0) {
         int digit = x % 10; // Extract the last digit
 
@@ -17,8 +16,6 @@ public:
         reversedNum = reversedNum * 10 + digit; // Append the digit
         x /= 10; // Remove the last digit from x
     }
-
-    return reversedNum;
-        
+    return reversedNum;  
     }
 };
