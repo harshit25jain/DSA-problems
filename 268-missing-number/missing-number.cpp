@@ -8,8 +8,6 @@ public:
     for (int num : nums) {
         Sum += num;
     }
-
-    return total - Sum;
-        
+    return total - Sum;   
     }
 };
