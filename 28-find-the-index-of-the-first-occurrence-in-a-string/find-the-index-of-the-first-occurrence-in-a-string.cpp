@@ -9,8 +9,6 @@ public:
         }
         if (j == m) return i; // match found
     }
-    return -1;   
-
-        
+    return -1;         
     }
 };
