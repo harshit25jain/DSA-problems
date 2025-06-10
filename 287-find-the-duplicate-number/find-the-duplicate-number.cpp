@@ -1,7 +1,8 @@
 class Solution {
 public:
     int findDuplicate(vector<int>& nums) {
-        int slow = nums[0];
+    //using slow and fast
+    int slow = nums[0];
     int fast = nums[0];
 
     // Phase 1: Detect cycle
