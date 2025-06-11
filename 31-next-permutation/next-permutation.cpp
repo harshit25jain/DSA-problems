@@ -22,6 +22,5 @@ public:
 
     // Reverse the part after index 'i'
     reverse(nums.begin() + i + 1, nums.end());
-}
-        
+}     
 };
