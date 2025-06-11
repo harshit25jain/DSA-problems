@@ -1,7 +1,7 @@
 class Solution {
 public:
 //TWO POINTER APPROACH
-    //Functin to expand arounf center and return longest palindrome
+    //Function to expand around center and return longest palindrome
     string expandAroundCenter(string s,int left, int right){
         while(left>=0 && right<s.size() && s[left] == s[right]){
             left--,right++;
