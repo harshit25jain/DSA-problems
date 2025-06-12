@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<int> findAnagrams(string s, string p) {
-
+//Sliding window approach 
         vector<int>result;
         if(s.size()<p.size()) return result;
 
@@ -16,7 +16,7 @@ public:
             scount[s[i] - 'a']++;
 
         }
-        //check if initial windo is an anagram or not
+        //check if initial window is an anagram or not
         if(scount == pcount)
         result.push_back(0);
 
