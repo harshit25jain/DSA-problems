@@ -1,5 +1,4 @@
-
-        class Solution {
+class Solution {
 public:
     int minDistance(string word1, string word2) {
         int m = word1.length();
