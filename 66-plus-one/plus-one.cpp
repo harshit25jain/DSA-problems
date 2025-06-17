@@ -8,7 +8,7 @@ public:
                 digits[i]++;
                 return digits;
             }
-            digits[i] = 0;
+            digits[i] = 0; //when digit[i]>9, then we do this
         }
         digits.insert(digits.begin(),1);
         return digits;
