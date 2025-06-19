@@ -4,7 +4,7 @@ public:
         int start = 0, end = arr.size()-1, mid,
         ans = arr.size();
         while(start<=end){
-            int mid = start+(end-start)/2;
+            int mid = start + (end-start)/2;
 
             if(arr[mid]-mid-1 >= k){
                 ans = mid;
