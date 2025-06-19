@@ -2,8 +2,8 @@ class Solution {
 public:
     bool arrayStringsAreEqual(vector<string>& word1, vector<string>& word2) {
         //TC:O(N+M) SC:O(N+M)
-        string s1 = "";
-        string s2 = "";
+        string s1 = ""; //stores concatenated string of word1
+        string s2 = ""; //stores concatenated string of word2
         
         // Concatenate all strings in word1
         for (const string& s : word1) {
