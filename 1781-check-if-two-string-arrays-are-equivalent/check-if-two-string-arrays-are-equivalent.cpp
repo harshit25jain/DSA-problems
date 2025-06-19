@@ -1,5 +1,5 @@
 class Solution {
-public:
+public: //The idea is to declare two strings s1 and s2 to store con srings of word1 & 2
     bool arrayStringsAreEqual(vector<string>& word1, vector<string>& word2) {
         //TC:O(N+M) SC:O(N+M)
         string s1 = ""; //stores concatenated string of word1
