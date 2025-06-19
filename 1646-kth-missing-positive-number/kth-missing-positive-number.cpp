@@ -1,7 +1,7 @@
 class Solution {
 public:
     int findKthPositive(vector<int>& arr, int k) {
-        int start = 0, end = arr.size()-1,mid,
+        int start = 0, end = arr.size()-1, mid,
         ans = arr.size();
         while(start<=end){
             int mid = start+(end-start)/2;
