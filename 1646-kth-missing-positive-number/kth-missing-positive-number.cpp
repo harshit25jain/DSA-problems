@@ -6,7 +6,7 @@ public:
         while(start<=end){
             int mid = start+(end-start)/2;
 
-            if(arr[mid]-mid-1 >=k){
+            if(arr[mid]-mid-1 >= k){
                 ans = mid;
                 end = mid-1;
             }
