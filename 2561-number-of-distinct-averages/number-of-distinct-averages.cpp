@@ -9,7 +9,6 @@ public:
             double avg = (nums[l] + nums[r]) / 2.0;
             s.insert(avg);
             l++,r--;
-
         }
         return s.size();
     }
