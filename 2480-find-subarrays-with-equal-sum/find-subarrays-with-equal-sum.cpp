@@ -7,7 +7,6 @@ public:
             if (set.count(sum)) {
                 return true;
             }
-
             set.insert(sum);
         }
         return false;
