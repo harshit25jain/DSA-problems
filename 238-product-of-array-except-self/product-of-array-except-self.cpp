@@ -10,15 +10,12 @@ public:
         res[i] = prefix;
         prefix *= nums[i];
     }
-
     int suffix = 1;
     for (int i = n - 1; i >= 0; i--) {
         res[i] *= suffix;
         suffix *= nums[i];
     }
-
-    return res;
-        
+    return res;   
     }
 };
 /* // TC:O(N) SC: O(N)-> prefix+suffix array
