@@ -1,6 +1,7 @@
 class Solution {
 public:
-//prefix+suffix approach TC:O(N),SC:O(1)
+
+//prefix + suffix approach TC:O(N),SC:O(1)
     vector<int> productExceptSelf(vector<int>& nums) {
     int n = nums.size();
     vector<int> res(n, 1);
