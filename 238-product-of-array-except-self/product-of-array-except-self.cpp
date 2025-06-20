@@ -19,6 +19,7 @@ public:
     return res;   
     }
 };
+
 /* // TC:O(N) SC: O(N)-> prefix+suffix array
 vector<int> productExceptSelf(vector<int>& nums) {
     int n = nums.size();
