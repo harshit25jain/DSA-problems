@@ -16,8 +16,8 @@ public:
             }
         }
         return true;
-
-
+ }
+};
     /*
     class Solution {
 public: //brute force approach
@@ -32,5 +32,3 @@ public: //brute force approach
 };
 
     */   
-    }
-};
