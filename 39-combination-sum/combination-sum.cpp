@@ -22,15 +22,14 @@ public:
     }
 };
 /*
-I use backtracking to explore all combinations starting from a given index.
-At each step, I try to include each candidate (starting from index to allow reuse) 
-and recurse with target - candidate. 
-I backtrack by popping the element from the current list.
-When target == 0, I’ve found a valid combination.
-
 “The recursive tree starts at the empty combination. 
 At each node, I choose a candidate starting from the current index to avoid duplicates 
-and allow reuse. If the current combination exceeds the target, I backtrack. 
-If it equals the target, I store it. The tree grows exponentially 
-since we can reuse elements, leading to a time complexity of O(2^T * T)
+and allow reuse.
+At each step, I try to include each candidate (starting from index to allow reuse) 
+and recurse with target - candidate. 
+If the current combination exceeds the target,
+I backtrack by popping the element from the current list. 
+If it equals the target, I store it. 
+When target == 0, I’ve found a valid combination.
+The tree grows exponentially leading to a time complexity of O(2^T * T)
 */
