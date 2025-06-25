@@ -30,4 +30,25 @@ I backtrack by popping the element from the current list.
 If it equals the target, I store it. 
 When target == 0, I’ve found a valid combination.
 The tree grows exponentially leading to a time complexity of O(2^T * T)
+
+Start: []
+
+├── [2] → target=5
+│   ├── [2,2] → target=3
+│   │   ├── [2,2,2] → target=1
+│   │   │   ├── [2,2,2,2] → target=-1 ✗
+│   │   │   └── [2,2,2,3] → target= -2 ✗
+│   │   └── [2,2,3] → target=0 ✔ VALID
+│   └── [2,3] → ...
+│
+├── [3] → target=4
+│   ├── [3,3] → target=1
+│   │   └── [3,3,3] → target=-2 ✗
+│   └── [3,2] → ...
+│
+├── [6] → target=1
+│   └── [6,2] → target=-1 ✗
+│
+└── [7] → target=0 ✔ VALID
+
 */
