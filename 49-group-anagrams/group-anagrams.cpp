@@ -15,3 +15,12 @@ public:
         return result;
     }
 };
+/*
+Time Complexity: O(n * k log k)
+Space Complexity: O(n * k)
+
+I use a hash map to group anagrams together.
+For each word, I sort the characters alphabetically — since anagrams have the same sorted representation.
+I use the sorted string as a key and push the original word into the map’s value list.
+After processing all strings, I return the values of the map as the grouped anagrams.
+*/
