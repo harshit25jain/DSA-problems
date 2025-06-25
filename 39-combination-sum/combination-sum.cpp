@@ -21,3 +21,10 @@ public:
         return result;
     }
 };
+/*
+I use backtracking to explore all combinations starting from a given index.
+At each step, I try to include each candidate (starting from index to allow reuse) 
+and recurse with target - candidate. 
+I backtrack by popping the element from the current list.
+When target == 0, I’ve found a valid combination.
+*/
