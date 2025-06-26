@@ -32,7 +32,8 @@ public:
 };
 /*I created a 2D DP table where dp[i][j] represents the minimum operations needed to convert 
 the first i characters of word1 to the first j characters of word2.
-If the characters match at position i-1 and j-1, I carry forward the previous diagonal value (dp[i-1][j-1]) because no operation is needed.
+If the characters match at position i-1 and j-1, I carry forward the previous diagonal
+value (dp[i-1][j-1]) because no operation is needed.
 
 Otherwise, I consider all three operations:
 Insert → dp[i][j-1]
