@@ -35,3 +35,8 @@ public:
         return result;
     }
 };
+/*
+I used two frequency arrays (pcount for pattern and scount for current window in s).
+I slide the window one character at a time, updating the frequency and checking for a
+match. If the frequency vectors match, I record the starting index.
+*/
