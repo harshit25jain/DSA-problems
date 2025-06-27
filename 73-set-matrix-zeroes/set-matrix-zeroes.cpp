@@ -1,7 +1,7 @@
 class Solution {
 public:
     void setZeroes(vector<vector<int>>& matrix) {
-        int m=matrix.size(), n=matrix[0].size();
+        int m = matrix.size(), n = matrix[0].size();
 
         // using first row & first column as markers to keep track of 0s.
         bool firstRowZero = false, firstColZero = false;
