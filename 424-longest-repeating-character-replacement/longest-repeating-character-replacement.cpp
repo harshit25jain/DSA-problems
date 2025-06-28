@@ -25,7 +25,7 @@ public:
 I used the sliding window technique. At every step, I try to maintain the longest window
 where at most k characters need to be replaced to make all characters same.
 
-I keep a frequency array of size 26 to track characters in the current window.
+I craete a frequency array of size 26 to keep track of characters in the current window.
 I also track the most frequent character’s count.
 
 If the current window needs more than k replacements, I shrink the window from the left.
