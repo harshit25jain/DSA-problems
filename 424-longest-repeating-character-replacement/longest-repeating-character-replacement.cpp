@@ -21,3 +21,17 @@ public:
       return max_length;  
     }
 };
+/*
+I used the sliding window technique. At every step, I try to maintain the longest window
+where at most k characters need to be replaced to make all characters same.
+
+I keep a frequency array of size 26 to track characters in the current window.
+I also track the most frequent character’s count.
+
+If the current window needs more than k replacements, I shrink the window from the left.
+
+At each step, I update the max_length of valid windows.
+
+The reason this works efficiently is because we never recalculate the whole frequency
+or recheck the entire window — it's optimized to run in linear time.
+*/
