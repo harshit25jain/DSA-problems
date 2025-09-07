@@ -8,8 +8,10 @@ public:
     }
     return result;
 }
-};/*The better approach woule be to use hashmapint 
-singleNumber(vector<int>& nums) {
+};
+/*TC: O(N) SC:O(N)
+The better approach woule be to use hashmap
+int singleNumber(vector<int>& nums) {
     unordered_map<int, int> freq;
     for(int num : nums) {
         freq[num]++;
