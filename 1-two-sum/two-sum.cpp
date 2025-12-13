@@ -16,6 +16,37 @@ public:
         return {};
     }
 };
+/*C# Code 
+
+using System.Collections.Generic;
+
+public class Solution
+{
+    public int[] TwoSum(int[] nums, int target)
+    {
+        Dictionary<int, int> map = new Dictionary<int, int>(); // stores num and its index
+
+        for (int i = 0; i < nums.Length; i++)
+        {
+            int complement = target - nums[i]; // find complement
+
+            // if complement exists in the map, return indices
+            if (map.ContainsKey(complement))
+            {
+                return new int[] { map[complement], i };
+            }
+
+            // store current number with index
+            map[nums[i]] = i;
+        }
+
+        return new int[0];
+    }
+}
+
+*/
+
+
 /*
 public int[] twoSum(int[] nums, int target) {
     Map<Integer,Integer> idx = new HashMap<>();
