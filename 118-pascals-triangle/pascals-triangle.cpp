@@ -15,3 +15,38 @@ public:
         
     }
 };
+
+
+/*C# Code 
+using System.Collections.Generic;
+
+public class Solution
+{
+    public IList<IList<int>> Generate(int numRows)
+    {
+        IList<IList<int>> triangle = new List<IList<int>>();
+
+        for (int i = 0; i < numRows; i++)
+        {
+            List<int> row = new List<int>();
+
+            // Initialize row with 1s
+            for (int j = 0; j <= i; j++)
+            {
+                row.Add(1);
+            }
+
+            // Compute middle values
+            for (int j = 1; j < i; j++)
+            {
+                row[j] = triangle[i - 1][j - 1] + triangle[i - 1][j];
+            }
+
+            triangle.Add(row);
+        }
+
+        return triangle;
+    }
+}
+
+*/
