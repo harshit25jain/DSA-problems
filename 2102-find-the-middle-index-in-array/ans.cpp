@@ -13,7 +13,7 @@ public:
         // Step 2: Traverse array
         for(int i = 0; i < nums.size(); i++) {
 
-            // Right sum = total sum - left sum - current element
+            // Calculate rightSum
             int rightSum = totalSum - leftSum - nums[i];
 
             // Check if left sum and right sum are equal
