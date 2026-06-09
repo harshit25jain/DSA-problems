@@ -4,7 +4,7 @@ public:
 
         stack<char>st;
         for(char ch: s){
-            //pusing all opening brackets into the stack
+            //pushing all opening brackets into the stack
             if(ch == '(' || ch == '[' || ch == '{'){
             st.push(ch);
             } else{
