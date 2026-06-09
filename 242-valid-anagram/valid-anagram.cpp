@@ -7,7 +7,7 @@ public:
 
         int count[26] = {0};
 
-        for(int i =0;i<s.length();i++){
+        for(int i =0; i<s.length(); i++){
             count[s[i] - 'a']++;
             count[t[i] - 'a']--;
         }
