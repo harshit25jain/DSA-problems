@@ -2,6 +2,7 @@ class Solution {
 public:
     int singleNumber(vector<int>& nums) {
         //the idea is to use xor it will take O(n)TC
+       // XOR of two identical numbers is 0 and XOR with 0 returns the same number
     int result = 0;
     for(int num : nums) {
         result ^= num;
