@@ -17,11 +17,14 @@ public:
     }
 };
 /*
-"I used a HashMap because it allows me to find the required complement in constant time. 
-Instead of checking all pairs with O(n²) complexity, I store previously visited elements in a HashMap. 
-For each element, I calculate target - nums[i] and check if it already exists in the map.
-If it does, I've found the answer; otherwise, I store the current element. 
-This gives an optimal O(n) time complexity with O(n) extra space. */
+
+"The problem asks for two numbers whose sum equals the target. 
+The observation is that if the current number is x, then I only need to find target - x. 
+To find this efficiently, I chose a HashMap because it provides O(1) average lookup time. 
+While traversing the array, I check if the complement already exists in the map.
+If yes, I return the indices; otherwise, I store the current number. 
+This avoids the O(n²) brute-force approach and gives an O(n) solution."
+ */
 
 
 
