@@ -24,7 +24,8 @@ I used Binary Search because the array is sorted but rotated.
 The key observation is that the minimum element is the point where the rotation occurs. 
 If I can determine which half contains the rotation point, I can safely discard the other half.
 To do this, I compare nums[mid] with nums[right]. 
-The element at right helps me identify which side of the array is properly sorted and which side contains the rotation point.
+The element at right helps me identify which side of the array is 
+properly sorted and which side contains the rotation point.
 
 If nums[mid] > nums[right], it means mid lies in the larger sorted portion of the array, 
 and the minimum element must be somewhere to the right of mid. Therefore, I move left to mid + 1.
