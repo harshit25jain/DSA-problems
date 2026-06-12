@@ -23,7 +23,7 @@ The observation is that if the current number is x, then I only need to find tar
 To find this efficiently, I chose a HashMap because it provides O(1) average lookup time. 
 While traversing the array, I check if the complement already exists in the map.
 If yes, I return the indices; otherwise, I store the current number. 
-This avoids the O(n²) brute-force approach and gives an O(n) solution."
+it gives an O(n) TC as we are traversing the array once."
  */
 
 
