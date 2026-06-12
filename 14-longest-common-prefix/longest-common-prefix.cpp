@@ -23,8 +23,6 @@ If it doesn't, I keep shortening the prefix by removing one character at a time
 until it becomes a valid prefix. By continuously reducing invalid prefixes, 
 I eventually obtain the longest prefix common to all strings. 
 If the prefix becomes empty, it means no common prefix exists.
-
-
 */
 
 
