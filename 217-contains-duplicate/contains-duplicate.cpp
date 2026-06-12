@@ -15,3 +15,8 @@ public:
     return false;    
     }
 };
+/*
+"The problem only requires detecting whether a duplicate exists, 
+so I chose a HashSet for constant-time lookup. While traversing the array,
+I check whether the current element has already been seen.
+If yes, I immediately return true because a duplicate exists. Otherwise, I insert the element into the set and continue.*/
